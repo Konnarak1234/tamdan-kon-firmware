@@ -16,5 +16,22 @@ This repo is for storing the source code of the integrated IoT devices that use 
 **sim808 + gps antenna**: collect bus location information in term of geocoding.
 
 **np532** : using near field communication technology for reading student id card.
+
+## PIN Out
+**PN532 with ESP32:**
+| PN532  | ESP32  |
+|-----------|-----------|
+| **SDA**       | **GPIO 21**   |
+| **SCL**       | **GPIO 22**   |
+| **VCC**      | **5V**      |
+| **GND**       | **GND**      |
+
+**Sim808 with ESP32:**
+| ESP32              | SIM808 | Purpose          |
+| ---------------------- | ---------- | ---------------- |
+| **GPIO17 (TX2)**       | **RXD**    | ESP32 → SIM808   |
+| **GPIO16 (RX2)**       | **TXD**    | SIM808 → ESP32   |
+| **GND**                | **GND**    | Common ground    |
+
 ## Overviews of Tamdan-Kon Firmware
 ![](assets/tamdan-kon-device.jpg)
